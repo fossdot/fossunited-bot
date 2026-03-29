@@ -1,0 +1,26 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Vector DB (large, rebuilt from data)
+data/chroma/
+
+# Data files (large, rebuilt by pipeline)
+data/
+
+# Claude Code memory
+.claude/
+
+# OS
+.DS_Store
