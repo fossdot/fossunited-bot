@@ -16,8 +16,12 @@ build/
 # Vector DB (large, rebuilt from data)
 data/chroma/
 
-# Data files (large, rebuilt by pipeline)
-data/
+# Raw scraped data (large, personal info)
+data/telegram_messages.jsonl
+data/forum_posts.jsonl
+
+# Vector DB (large binary, rebuilt from chunks)
+data/chroma/
 
 # Claude Code memory
 .claude/
