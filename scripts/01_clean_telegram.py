@@ -124,7 +124,7 @@ def make_single_chunk(msg):
         'username': msg.get('username', ''),
         'text': msg['text'],
         'chunk_text': f"[Telegram] {msg.get('username', 'member')}: {msg['text']}",
-        'url': f"https://tg.fossunited.org/#{msg.get('day', '')}",
+        'url': f"https://tg.fossunited.org/{msg.get('month', '')}.html#{msg.get('id', '')}",
         'msg_id': msg.get('id', ''),
     }
 
@@ -143,7 +143,7 @@ def make_thread_chunk(thread):
         'participants': list({m.get('username', '') for m in thread}),
         'text': combined,
         'chunk_text': f"[Telegram thread]\n{combined}",
-        'url': f"https://tg.fossunited.org/#{first.get('day', '')}",
+        'url': f"https://tg.fossunited.org/{first.get('month', '')}.html#{first.get('id', '')}",
         'msg_id': first.get('id', ''),
     }
 
