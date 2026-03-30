@@ -25,7 +25,7 @@ BATCH_SIZE  = 50
 
 def load_all_chunks():
     chunks = []
-    for fname in ['chunks_telegram.jsonl', 'chunks_forum.jsonl']:
+    for fname in ['chunks_telegram.jsonl', 'chunks_forum.jsonl', 'chunks_website.jsonl']:
         path = CHUNKS_DIR / fname
         if not path.exists():
             print(f"Warning: {path} not found, skipping")

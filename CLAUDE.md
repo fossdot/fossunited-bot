@@ -18,6 +18,7 @@ All scripts must be run from the **repo root** — they use relative paths like 
 ```bash
 python scripts/01_clean_telegram.py      # → data/chunks_telegram.jsonl
 python scripts/02_clean_forum.py         # → data/chunks_forum.jsonl
+python scripts/04_fetch_website.py       # → data/chunks_website.jsonl  (live scrape)
 python scripts/03_embed_and_index.py     # → data/chroma/  (takes several minutes)
 ```
 
